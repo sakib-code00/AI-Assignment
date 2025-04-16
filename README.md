@@ -1,7 +1,7 @@
 <h1>Spam Email Detection</h1>
 <section id="sec1">
   <h2>Project Overview</h2>
-  <p>This project focuses on creating a machine-learning model to help predict and classify different weather conditions, using a dataset with weather information from Sylhet, Bangladesh. By analyzing patterns in data like temperature, humidity, pressure, and precipitation, the model aims to identify and classify weather conditions (e.g., sunny, rainy, or foggy).</p>
+  <p>This project focuses on building a machine learning model to detect spam emails. Using a labeled dataset of emails (spam and ham), the model learns to identify unwanted or harmful messages. The process includes data cleaning, feature extraction, model training (KNN, Naive Bayes, Logistic Regression, etc.), and evaluation. The final model can predict whether a new email is spam or not based on its content.</p>
 </section>
 <h2>Table of Content</h2>
 <ul>
