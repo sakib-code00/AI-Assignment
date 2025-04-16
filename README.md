@@ -9,7 +9,6 @@
   <li><a href="#sec2">Data Description</a></li>
   <li><a href="#sec3">Data Processing</a></li>
   <li><a href="#sec4">Exploratory Data Analysis</a></li>
-  <li><a href="#sec5">Handling Imbalanced Data</a></li>
   <li><a href="#sec6">Model Selection</a></li>
   <li><a href="#sec7">Training and Evaluation</a></li>
   <li><a href="#sec8">Confusion Matrix and Classification Report</a></li>
@@ -21,7 +20,7 @@
 </ul>
 <section id="sec2">
   <h2>Data Descriptions</h2>
-  <p>The dataset is a collection of weather observations from Sylhet in 2023. Key features include:</p>
+  <p>The dataset contains a collection of labeled emails used for spam detection. Each entry includes:</p>
   <ul>
     <li><b>Message:</b> The actual content of the email as plain text.</li>
     <li><b>Label:</b> Indicates whether the email is spam or ham (not spam).</li>
@@ -30,26 +29,23 @@
 </section>
 <section id="sec3">
   <h2>Data Processing</h2>
-  <p>We conducted several preprocessing steps to prepare the data for machine learning:</p>
+  <p>For the data to be ready for the machine learning model, we performed the following steps:</p>
   <ol type="a">
-    <li>Checked for missing data and applied techniques to fill or drop missing entries to maintain data integrity.</li>
-    <li>Removed irrelevant or highly correlated columns (e.g., tempmax and tempmin after ensuring temp was representative).</li>
-    <li>Converted categorical variables into numerical values to enable machine learning algorithms to process them.</li>
-    <li> Standardized the numerical features to ensure all features contributed equally to the model's performance.</li>
+    <li>Drop Null Values – Removed any rows with missing or null values.</li>
+    <li>Delete Duplicates – Removed any duplicate email entries to avoid bias.</li>
+    <li>Converted text into numerical values to enable machine learning algorithms to process them.</li>
   </ol>
+  <p>These steps help ensure clean and consistent data for training the model.</p>
 </section>
 <section id="sec4">
   <h2>Exploratory Data Analysis</h2>
-  <p> Visualized the data to understand trends and relationships among variables:</p>
+  <p>In this step, we explore the dataset to understand its structure, identify patterns, and detect any issues that need to be addressed. The key steps of EDA are:</p>
   <ul>
-    <li>Used histograms and box plots to check feature distributions and detect outliers.</li>
-    <li>Generated a heatmap to explore correlations, ensuring features were independent enough to contribute unique information to the model.</li>
-    <li>Visualized the target variable preciptype to address the issue of imbalanced classes, as certain weather types were more frequent.</li>
+    <li>Display basic information about the dataset, such as the number of rows, columns, and data types.</li>
+    <li>Visualize the count of spam and ham emails to check for class imbalance.</li>
+    <li>Inspect if there are any null or missing values in the dataset.</li>
   </ul>
-</section>
-<section id="sec5">
-  <h2>Handling Imbalanced Data</h2>
-  <p>Since some weather types were underrepresented, used Random Oversampling to balance the dataset.<br/> This technique involved oversampling the minority classes to ensure the model learned from all weather conditions equally.</p>
+  <p>By conducting EDA, we gain insights into the data, helping to make informed decisions for preprocessing and model building.</p>
 </section>
 <section id="sec6">
   <h2>Model Selection</h2>
