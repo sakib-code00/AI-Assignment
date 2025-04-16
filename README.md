@@ -23,14 +23,10 @@
   <h2>Data Descriptions</h2>
   <p>The dataset is a collection of weather observations from Sylhet in 2023. Key features include:</p>
   <ul>
-    <li><b>Temperature (tempmax, tempmin, temp):</b> Maximum, minimum, and current temperature.</li>
-    <li><b>Humidity:</b> Measures the moisture in the air.</li>
-    <li><b>Precipitation Type (preciptype)</b>: Type of precipitation recorded, which is our target variable.</li>
-    <li><b>Pressure:</b> Atmospheric pressure in the region.</li>
-    <li><b>Visibility:</b> Measure of the clarity of the atmosphere.</li>
-    <li><b>Wind Speed:</b> Speed of wind, which can influence weather patterns.</li>
+    <li><b>Message:</b> The actual content of the email as plain text.</li>
+    <li><b>Label:</b> Indicates whether the email is spam or ham (not spam).</li>
   </ul>
-  <p>The target variable, preciptype, represents various weather types we aim to classify.</p>
+  <p>The dataset is used to train and test the model to classify emails based on their text content.</p>
 </section>
 <section id="sec3">
   <h2>Data Processing</h2>
