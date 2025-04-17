@@ -11,7 +11,6 @@
   <li><a href="#sec4">Exploratory Data Analysis</a></li>
   <li><a href="#sec6">Model Selection</a></li>
   <li><a href="#sec7">Training and Evaluation</a></li>
-  <li><a href="#sec8">Confusion Matrix and Classification Report</a></li>
   <li><a href="#sec9">Future work</a></li>
   <li><a href="#sec10">Conclusion</a></li>
   <li><a href="#sec11">Visualization</a></li>
@@ -49,12 +48,29 @@
 </section>
 <section id="sec6">
   <h2>Model Selection</h2>
-  <p>Tested several machine learning models to determine which algorithm performed best:</p>
+  <p>For this project, we tested and compared the following machine learning models:</p>
   <ul>
-    <li><b>Logistic Regression:</b> A simple model that uses probabilities for binary and multiclass classification.</li>
-    <li><b>Support Vector Machine (SVM):</b> An algorithm that finds the optimal hyperplane to separate classes, effective for high-dimensional spaces.</li>
-    <li><b>Random Forest:</b> An ensemble model that builds multiple decision trees and combines their outputs to improve accuracy and reduce overfitting.</li>
-    <li><b>XGBoost:</b> A highly effective gradient boosting model, optimized for performance in machine learning competitions.</li>
+    <li>
+      <b>Logistic Regression:</b>
+      <ul>
+        <li>A reliable and interpretable model for binary classification.</li>
+        <li>Performs well with text features like TF-IDF</li>
+      </ul>
+      <li>
+      <b>K-Nearest Neighbors (KNN):</b>
+      <ul>
+        <li>Classifies emails based on similarity to nearby data points.</li>
+        <li>Slower with large datasets but simple to understand.</li>
+      </ul>
+    </li>
+    <li>
+      <b>Naive Bayes:</b>
+      <ul>
+        <li>Works well for text classification problems.</li>
+        <li>Fast and accurate for spam detection.</li>
+      </ul>
+    </li>
+    </li>
   </ul>
 </section>
 
@@ -62,7 +78,7 @@
   <h2>Training and Evaluation</h2>
   <p>Split the data into training and validation sets to evaluate the models’ effectiveness. The following metrics were used:</p>
   <li>Accuracy: Measures the overall correctness of the model.</li>
-  <li>ROC-AUC Score: Evaluates model performance, especially for imbalanced datasets.</li>
+  <li>ROC-AUC Score: Evaluates model performance, especially useful for imbalanced datasets.</li>
   <li>Confusion Matrix: Helps visualize the classification results and identify misclassifications.</li>
   <li>Classification Report: Provides detailed metrics like precision, recall, and F1-score for each class.</li>
   <h3>Model Training Results</h3>
@@ -70,56 +86,40 @@
   <table style="border: 1px solid black;">
     <tr>
       <th>Model</th>
-      <th>Training ROC-AUC</th>
-      <th>Validation ROC-AUC</th>
+      <th>Accuracy</th>
     </tr>
     <tr>
       <td>Logistic Regression</td>
-      <td>0.87</td>
-      <td>0.85</td>
+      <td>0.98</td>
     </tr>
     <tr>
-      <td>Support Vector Machine</td>
-      <td>0.91</td>
-      <td>0.89</td>
-    </tr>
-    <tr>
-      <td>Random Forest</td>
-      <td>0.93</td>
+      <td>KNN</td>
       <td>0.91</td>
     </tr>
     <tr>
-      <td>XGBoost</td>
-      <td>0.95</td>
-      <td>0.93</td>
+      <td>Naive Bayes</td>
+      <td>0.99</td>
     </tr>
   </table>
-  <p>The XGBoost model achieved the highest validation accuracy and ROC-AUC score, making it the best-performing model.</p>
-</section>
-
-<section id="sec8">
-  <h2>Confusion Matrix and Classification Report</h2>
-  <p>For the best-performing model (XGBoost), analyzed its confusion matrix and classification report:</p>
-  <li><b>Confusion Matrix:</b> Showed strong performance across all classes, though there was some misclassification<br/> in minority classes, which could benefit from further tuning.</li>
-  <li><b>Classification Report:</b> High precision and recall for majority classes, and reasonable performance on minority classes after </br>applying oversampling techniques.</li>
+  <p>The Naive Bayes model achieved the highest validation accuracy making it the best-performing model.</p>
 </section>
 
 <section id="sec9">
   <h2>Future Work</h2>
-  <p>To enhance the model’s accuracy and usability, identified several future improvements:</p>
+  <p>To improve the performance and usability of this project in the future, the following steps can be considered:</p>
   <ol>
-    <li><b>Feature Engineering:</b> Introduce new features like the previous day’s conditions, seasonality, or air quality to improve predictive power.</li>
-    <li><b>Model Tuning:</b> Further optimize hyperparameters in XGBoost and explore other boosting models like CatBoost or LightGBM for better accuracy.</li>
-    <li><b>Real-Time Prediction System:</b> Deploy the model to provide real-time weather predictions through an API or web app.</li>
-    <li><b>Advanced Sampling Techniques:</b> Experiment with SMOTE (Synthetic Minority Over-sampling Technique) to better handle class imbalance.</li>
-    <li><b>Transfer Learning:</b> Utilize pre-trained weather models or regional weather patterns to improve accuracy for Sylhet or nearby regions.</li>
+    <li><b>Real-Time Spam Detection:</b> Develop a system that can detect spam emails in real-time.</li>
+    <li><b>Larger & Diverse Dataset:</b> Train the model on a larger and more diverse email dataset to improve generalization.</li>
+    <li><b>Multilingual Support:</b> Extend the model to detect spam in different languages.</li>
+    <li><b>Deploy as a Web App or API:</b> Make the model accessible through a user-friendly interface or REST API.</li>
   </ol>
 </section>
 
 <section id="sec10">
   <h2>Conslusion</h2>
-  <p>The project successfully developed a machine-learning model capable of classifying weather conditions based on historical data.<br/> By testing various algorithms, we found that XGBoost provided the highest accuracy, suggesting that gradient-boosting<br/> techniques are effective for weather classification.</p>
-  <p>This model can be extended to provide real-time weather classification, and with additional improvements, it could become a valuable<br/> tool for industries affected by weather conditions, such as agriculture, tourism, and event planning.</p>
+  <p>In this project, we developed a machine learning model to detect spam emails accurately. After preprocessing the data and extracting features using CountVectorizer, we trained and evaluated several models including Naive Bayes, KNN, and Logistic Regression.</p>
+  <p>Among them, Logistic Regression performed the best based on accuracy, precision, recall, and F1-score. The model was able to effectively distinguish between spam and ham emails.</p>
+  <p>This project shows that machine learning can be a powerful tool in building automated spam filters, helping users stay safe and reducing unwanted emails.</p>
 </section>
 
 <section id="sec11">
@@ -153,6 +153,6 @@
 
 <section id="sec12">
   <h2>Data Source</h2>
-  <h3><a href="https://drive.google.com/file/d/1YrgnIn2rnJP6Skw18-VjHSXoDuVdqbFI/view?usp=sharing">Sylhet Weather Dataset 2023</a></h3>
+  <h3><a href="https://drive.google.com/drive/folders/1jo152t3fAcijJ6o7fowG1iKq8Fob9Y61?usp=drive_link">Email Dataset</a></h3>
   
 </section>
