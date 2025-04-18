@@ -124,7 +124,6 @@
 
 <section id="sec11">
   <h2>Visualization</h2>
-  <h3>Columns</h3>
   <img src="https://github.com/user-attachments/assets/557b9522-2ee6-4dcd-8861-258dd0fb7891">
 
   <h3>KNN</h3>
