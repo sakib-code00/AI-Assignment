@@ -125,30 +125,14 @@
 <section id="sec11">
   <h2>Visualization</h2>
   <h3>Columns</h3>
-  <img src="https://github.com/user-attachments/assets/075e9e88-1200-490f-a29a-c36e923a8239">
+  <img src="https://github.com/user-attachments/assets/557b9522-2ee6-4dcd-8861-258dd0fb7891">
 
-  <h3>Precipitation level in Sylhet in 2023</h3>
-  <img src="https://github.com/user-attachments/assets/6d0f99fe-3d4b-463c-a7e3-0fb92458e493">
-  <h3> The distribution of the continuous features given in the dataset</h3>
-  <img src="https://github.com/user-attachments/assets/e939ff5d-944c-4d88-9c2b-1dab9b05a97c" alt="Subplots">
-  <h3> Boxplots for the continuous variable to detect the outliers present in the data.</h3>
-  <img src="https://github.com/user-attachments/assets/791ce6b2-4d44-48b6-bc8e-ab4e4d30b646" alt="Boxplots">
-  <h3>Correlation Heatmap</h3>
-  <img src="https://github.com/user-attachments/assets/90b5da86-780a-475b-b1b4-b8342d686949" alt="Heatmap">
-  <h3> confusion matrix as well for the validation data using the Logistic Regression model</h3>
-  <img src="https://github.com/user-attachments/assets/106d623c-f9ea-42ab-b04e-076ae1d7588a)" alt="Logistic Regression ">
-  <h3> confusion matrix as well for the validation data using the XGBoost model</h3>
-  <img src="https://github.com/user-attachments/assets/beb6b4e8-c37f-4f54-b7f7-4ecbf1272c17" alt="XGBoost">
-  <h3> confusion matrix as well for the validation data using the SVC (Support Vector) model</h3>
-  <img src="https://github.com/user-attachments/assets/3e00ffc2-2ca4-402c-be89-b92bfcce0a18" alt="SVC">
-  <h3> confusion matrix as well for the validation data using the Random Forest model</h3>
-  <img src="https://github.com/user-attachments/assets/0c223560-e067-40a1-af05-8cadbb32d8a7" alt="Random Forest">
-  <h3> confusion matrix as well for the validation data using the K-Nearest Neighbors model</h3>
-  <img src="https://github.com/user-attachments/assets/2788b1f8-71c5-4ae3-b595-5102d4482394" alt="K-NN">
-  <h3>Decision Tree</h3>
-  <img src="https://github.com/user-attachments/assets/cefb1519-ccbd-4f2a-a4fb-b574df53a8bb" alt="Decision Tree">
-  <h3> confusion matrix as well for the validation data using the Decision Tree model</h3>
-  <img src="https://github.com/user-attachments/assets/f6342213-cb1e-47ac-890c-79a215d936b2" alt="Decision Tree">
+  <h3>KNN</h3>
+  <img src="https://github.com/user-attachments/assets/5cc29cd3-f208-438f-8575-2784395c0ef4">
+  <h3>Logistic Regression</h3>
+  <img src="https://github.com/user-attachments/assets/7676194f-eee2-46ea-9b56-81bc9923d304" alt="Subplots">
+  <h3>Naive Bayes</h3>
+  <img src="https://github.com/user-attachments/assets/f68ccfb1-c41f-4419-9647-a9f204686e17" alt="Boxplots">
 </section>
 
 <section id="sec12">
